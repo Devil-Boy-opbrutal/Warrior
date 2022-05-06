@@ -85,4 +85,4 @@ nitric@MacBook~ $ bash start
 - [𝗥𝗼𝗷𝗦𝗲𝗿𝗕𝗲𝘀𝘁](https://github.com/rojserbest) CallsMusic Developer
 
 ### Support & Updates 🎑
-<a href="https://t.me/TheXCodeTeam"><img src="https://img.shields.io/badge/Join-Group%20Support-blue.svg?style=for-the-badge&logo=Telegram"></a> <a href="https://t.me/TheXCodeTeam"><img src="https://img.shields.io/badge/Join-Updates%20Channel-blue.svg?style=for-the-badge&logo=Telegram"></a>
+<a href="https://t.me/XCodeSupport"><img src="https://img.shields.io/badge/Join-Group%20Support-blue.svg?style=for-the-badge&logo=Telegram"></a> <a href="https://t.me/TheXCodeTeam"><img src="https://img.shields.io/badge/Join-Updates%20Channel-blue.svg?style=for-the-badge&logo=Telegram"></a>
