@@ -1,0 +1,8 @@
+blank_issues_enabled: true
+contact_links:
+  - name: Lyra Support
+    url: https://t.me/XCodeSupport
+    about: Direct chat on non-inquiries subjects.
+  - name: Documentation
+    url: https://Lyra.tech/
+    about: Documentation for getting started with bot.
