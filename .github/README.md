@@ -19,7 +19,7 @@
 - Python 3.7 or higher
 - [PyTgCalls](https://github.com/pytgcalls/pytgcalls)
 
-### 🧪 Get `SESSION_NAME` from below:
+### 🧪 Get `STRING_SESSION` from below:
 
 [![GenerateString](https://img.shields.io/badge/repl.it-generateString-yellowgreen)](https://replit.com/@HEXOROP/eSportMusic) ``Pyrogram``
 
