@@ -37,9 +37,9 @@ auth_8 : "┗ Added By:-"
 
 # PLUGINS - Admins
 admin_1 : "Music is already Paused."
-admin_2 : "🎧 Voicechat Paused by {}!"
+admin_2 : "🎧 omfo ohk paused ⏸️ {}!"
 admin_3 : "Music is already resumed."
-admin_4 : "🎧 Voicechat Resumed by {}!"
+admin_4 : "🎧 omfo ohk Resumed by {}!"
 admin_5 : "Music is already muted."
 admin_6 : "🎧 Voicechat Muted by {}!"
 admin_7 : "Music is already unmuted."
@@ -51,7 +51,7 @@ admin_12 : "Unable to skip to a specific track because of enabled loop play. Ple
 admin_13 : "Please use numeric numbers for specific tracks, like 1, 2 or 4 etc"
 admin_14 : "Atleast 2 tracks needed in queue to skip to a specific number. Check queue by /queue"
 admin_15 : "Not enough tracks in queue for the value given by you. Please choose numbers between 1 and {0}"
-admin_16 : "Failed to skip to specific track.\n\nCheck left queue by /queue"
+admin_16 : "Sommry Vro Failed to skip to specific track.\n\nCheck left queue by /queue"
 admin_17 : "{0}.. Please Wait"
 admin_18 : "Admin List Not Found\n\nPlease reload adminlist via /admincache or /reload"
 admin_19 : "You need to be admin with manage voice chat rights to perform this.\nIf you're already admin, reload admincache via /admincache "
@@ -142,7 +142,7 @@ cplay_5 : "Only Channels are supported."
 cplay_6 : "You need to be the **Owner** of the channel[{0}] to connect it with this group.\n**Channel's Owner:** @{1}\n\nAlternatively you can link your group to that channel and then try connnecting with `/channelplay linked`"
 
 #Play
-play_1 : "🔄 Processing Query... Please Wait!"
+play_1 : "Rukjao bahiyo aur unki bheno Processing Query... Please Wait !"
 play_2 : "**🏷Channel Play Mode**\n\n🔄 Processing Query... Please Wait!\n**Linked Channel:** {0}"
 play_3 : "Failed to Process Query!"
 play_4 : "🖇 **Admins Only Play**\nOnly Admins and Auth Users can play music in this group.\n\nChange mode via /playmode and if you're already admin, reload admincache via /admincache"
@@ -237,22 +237,22 @@ stream_4 : "📡 **Started Streaming** 💡\n\n**🏷Title:** [{0}]({1})\n⌛️
 # Inline Buttons
 
 #General Buttons
-CLOSE_BUTTON  : "🗑 Close"
-CLOSEMENU_BUTTON  : "🗑 Close Menu"
+CLOSE_BUTTON  : "🥲 Close"
+CLOSEMENU_BUTTON  : "🥲Close Menu"
 BACK_BUTTON : "⬅ Back"
-UNBAN_BUTTON : "🗑 Unban Assistant"
+UNBAN_BUTTON : "😒 Unban Assistant"
 
 #Lyrics
 L_B_1 : "🚀 Checkout Lyrics Now"
 
 # Start
 S_B_1 : "🗒 Commands"
-S_B_2 : "🔧 Settings"
+S_B_2 : "Semtting🌚"
 S_B_3 : "📨 Support"
 S_B_4 : "📨 Channel"
 S_B_5 : "✚ Add me to your Group"
 S_B_6 : "💡 Git Repo"
-S_B_7 : "👤 Bot Owner"
+S_B_7 : "👤 ❤Owner"
 S_B_8 : "🔎 How to Use? Commands Menu."
 
 #Help 
@@ -317,7 +317,7 @@ ST_B_26 : "🗑 Command Clean"
 ST_B_27 : "🧑‍🚀 Suggestion Mode"
 
 #Song
-SG_B_1 : "↗️ Open Private Chat"
+SG_B_1 : "AKELE ME AA BHAI MIL JAYEGA TUJE SONG"
 SG_B_2 : "🔊 Audio"
 SG_B_3 : "🎥 Video"
 
@@ -429,12 +429,12 @@ pbot_13 : "\n**<b>Unfetched Chats:</b>**\n\n"
 
 
 #Gbanned
-gban_1 : "You want to gban yourself? How Fool!"
+gban_1 : "Chumtiya he kya ho jo apne aap ko karna he ban!"
 gban_2 : "Should i block myself? Lol"
 gban_3 : "You want to block a sudo user?"
-gban_4 : "{0} is already **gbanned** from the bot."
-gban_5 : "**Initializing Gobal Ban on {0}**\n\nExpected Time : {1}."
-gban_6 : "**Gbanned Successfully**\n\nBanned **{0}** from **{1}** chats."
+gban_4 : "{0} abe bhai ye to phele se he **gbanned** from the bot."
+gban_5 : "**ruk jao guys gbam horha he {0}**\n\nExpected Time : {1}."
+gban_6 : "**Hogaya ye chutiya gbam**\n\nBanned **{0}** from **{1}** chats."
 gban_7 : "{0} is not **gbanned **yet from the bot."
 gban_8 : "**Ungbanning {0}**\n\nExpected Time : {1}."
 gban_9 : "**UnGbanned Successfully**\n\nUnbanned **{0}** in **{1}** chats."
