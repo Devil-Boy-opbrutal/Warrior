@@ -1,4 +1,4 @@
-#
+
 # Copyright (C) 2022-2023 by NitricXd@Github, < https://github.com/NitricXd >.
 #
 # This file is part of < https://github.com/NitricXd/LyraMusic > project,
@@ -24,11 +24,8 @@ def botplaylist_markup(_):
         ],
         [
             InlineKeyboardButton(
-                text=_["PL_B_4"], callback_data="PM"
-            ),
-            InlineKeyboardButton(
                 text=_["CLOSE_BUTTON"], callback_data="close"
-            ),
+            )
         ],
     ]
     return buttons
@@ -38,17 +35,17 @@ def top_play_markup(_):
     buttons = [
         [
             InlineKeyboardButton(
-                text=_["PL_B_9"], callback_data="SERVERTOP global"
+                text=_["PL_B_9"], url=f"https://t.me/SquadGoalsss"
             )
         ],
         [
             InlineKeyboardButton(
-                text=_["PL_B_10"], callback_data="SERVERTOP chat"
+                text=_["PL_B_10"],url=f"https://t.me/gifsgalleryy"
             )
         ],
         [
             InlineKeyboardButton(
-                text=_["PL_B_11"], callback_data="SERVERTOP user"
+                text=_["PL_B_11"], url=f"https://t.me/raamsiiya"
             )
         ],
         [
@@ -89,17 +86,17 @@ def top_play_markup(_):
     buttons = [
         [
             InlineKeyboardButton(
-                text=_["PL_B_9"], callback_data="SERVERTOP Global"
+                text=_["PL_B_9"], url=f"https://t.me/SquadGoalsss"
             )
         ],
         [
             InlineKeyboardButton(
-                text=_["PL_B_10"], callback_data="SERVERTOP Group"
+                text=_["PL_B_10"], url=f"https://t.me/gifsgalleryy"
             )
         ],
         [
             InlineKeyboardButton(
-                text=_["PL_B_11"], callback_data="SERVERTOP Personal"
+                text=_["PL_B_11"], url=f"https://t.me/raamsiiya"
             )
         ],
         [
