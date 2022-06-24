@@ -77,11 +77,11 @@ def get_stats_markup(_, status):
             [
                 InlineKeyboardButton(
                     text=_["SA_B_6"],
-                    url=f"https://t.me/{app.username}?start=stats",
+                    url=f"https://t.me/SquadGoalsss",
                 ),
                 InlineKeyboardButton(
                     text=_["SA_B_5"],
-                    callback_data="TopOverall g",
+                    url=f"https://t.me/gifsgalleryy",
                 ),
             ],
             sudo if status else not_sudo,
@@ -94,7 +94,7 @@ def stats_buttons(_, status):
     not_sudo = [
         InlineKeyboardButton(
             text=_["SA_B_5"],
-            callback_data="TopOverall s",
+            url=f"https://t.me/gifsgalleryy",
         )
     ]
     sudo = [
@@ -104,7 +104,7 @@ def stats_buttons(_, status):
         ),
         InlineKeyboardButton(
             text=_["SA_B_5"],
-            callback_data="TopOverall s",
+            url=f"https://t.me/gifsgalleryy",
         ),
     ]
     upl = InlineKeyboardMarkup(
