@@ -1,4 +1,4 @@
-#
+
 # Copyright (C) 2022-2023 by NitricXd@Github, < https://github.com/NitricXd >.
 #
 # This file is part of < https://github.com/NitricXd/LyraMusic > project,
@@ -171,7 +171,7 @@ START_IMG_URL = getenv("START_IMG_URL", None)
 
 PING_IMG_URL = getenv(
     "PING_IMG_URL",
-    "assets/Ping.jpeg",
+    "https://te.legra.ph/file/eafc028ac026704af987b.jpg",
 )
 
 PLAYLIST_IMG_URL = getenv(
