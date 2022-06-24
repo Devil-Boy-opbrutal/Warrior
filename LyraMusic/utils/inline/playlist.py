@@ -35,17 +35,20 @@ def top_play_markup(_):
     buttons = [
         [
             InlineKeyboardButton(
-                text=_["PL_B_9"], url=f"https://t.me/SquadGoalsss"
+                text=_["PL_B_9"] 
+                url=f"https://t.me/SquadGoalsss", 
             )
         ],
         [
             InlineKeyboardButton(
-                text=_["PL_B_10"],url=f"https://t.me/gifsgalleryy"
+                text=_["PL_B_10"]
+                url=f"https://t.me/gifsgalleryy", 
             )
         ],
         [
             InlineKeyboardButton(
-                text=_["PL_B_11"], url=f"https://t.me/raamsiiya"
+                text=_["PL_B_11"]
+                url=f"https://t.me/raamsiiya", 
             )
         ],
         [
@@ -86,7 +89,8 @@ def top_play_markup(_):
     buttons = [
         [
             InlineKeyboardButton(
-                text=_["PL_B_9"], url=f"https://t.me/SquadGoalsss"
+                text=_["PL_B_9"]
+                url=f"https://t.me/SquadGoalsss", 
             )
         ],
         [
