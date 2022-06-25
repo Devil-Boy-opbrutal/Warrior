@@ -48,7 +48,7 @@ async def ping_com(client, message: Message, _):
             MUSIC_BOT_NAME, resp, UP, DISK, CPU, RAM, pytgping
         )
     )
-   def top_play_markup(_):
+   
     buttons = [
         [
             InlineKeyboardButton(
@@ -56,4 +56,4 @@ async def ping_com(client, message: Message, _):
             )
         ],
      ]
-     return buttons
+    
