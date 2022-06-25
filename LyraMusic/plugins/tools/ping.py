@@ -48,8 +48,12 @@ async def ping_com(client, message: Message, _):
             MUSIC_BOT_NAME, resp, UP, DISK, CPU, RAM, pytgping
         )
     )
-[
+   def top_play_markup(_):
+    buttons = [
+        [
             InlineKeyboardButton(
-                text=_["GROUP🥰"],url=f"https://t.me/SquadGoalsss",
-            ),
-], 
+                text=_["🥰Group"], url=f"https://t.me/SquadGoalsss" 
+            )
+        ],
+     ]
+     return buttons
