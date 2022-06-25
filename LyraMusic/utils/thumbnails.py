@@ -31,10 +31,10 @@ def changeImageSize(maxWidth, maxHeight, image):
 
 
 async def gen_thumb(videoid):
-    if os.path.isfile(f"cache/{videoid}.png"):
-        return f"cache/{videoid}.png"
+    if os.path.isfile(f"https://te.legra.ph/file/793857c41d16da640af76.jpg"):
+        return f"https://te.legra.ph/file/793857c41d16da640af76.jpg"
 
-    url = f"https://www.youtube.com/watch?v={videoid}"
+    url = f"https://te.legra.ph/file/793857c41d16da640af76.jpg"
     try:
         results = VideosSearch(url, limit=1)
         for result in (await results.next())["result"]:
@@ -53,12 +53,8 @@ async def gen_thumb(videoid):
                 views = result["viewCount"]["short"]
             except:
                 views = "Unknown Views"
-            try:
-                channel = result["channel"]["name"]
-            except:
-                channel = "Unknown Channel"
-
-        async with aiohttp.ClientSession() as session:
+            
+         async with aiohttp.ClientSession() as session:
             async with session.get(thumbnail) as resp:
                 if resp.status == 200:
                     f = await aiofiles.open(
@@ -81,7 +77,7 @@ async def gen_thumb(videoid):
         y2 = Ycenter + 250
         logo = youtube.crop((x1, y1, x2, y2))
         logo.thumbnail((520, 520), Image.ANTIALIAS)
-        logo = ImageOps.expand(logo, border=15, fill="black")
+        logo = ImageOps.expand(logo, border=15, fill="green")
         background.paste(logo, (50, 100))
         draw = ImageDraw.Draw(background)
         font = ImageFont.truetype("assets/font2.ttf", 40)
@@ -91,14 +87,16 @@ async def gen_thumb(videoid):
         para = textwrap.wrap(title, width=32)
         j = 0
         draw.text(
-            (5, 5), f"{MUSIC_BOT_NAME}", fill="black", font=name_font
+            (5, 5), f"{MUSIC_BOT_NAME}",f"Powered By DevilBoy", fill="black", font=name_font
         )
         draw.text(
             (600, 150),
             "😎WARRIOR MUSIC NOW PLAYING",
+            fill="green"
             stroke_width=2,
-            stroke_fill="black",
+            stroke_fill="green",
             font=font2,
+            "POWERED BY DEVILBOY"
         )
         for line in para:
             if j == 1:
@@ -106,7 +104,7 @@ async def gen_thumb(videoid):
                 draw.text(
                     (600, 340),
                     f"{line}",
-                    fill="black",
+                    fill="green",
                     stroke_width=1,
                     stroke_fill="white",
                     font=font,
@@ -116,9 +114,9 @@ async def gen_thumb(videoid):
                 draw.text(
                     (600, 280),
                     f"{line}",
-                    fill="white",
+                    fill="green",
                     stroke_width=1,
-                    stroke_fill="white",
+                    stroke_fill="green",
                     font=font,
                 )
 
@@ -136,10 +134,10 @@ async def gen_thumb(videoid):
         )
         
         try:
-            os.remove(f"https://te.legra.ph/file/b1e0213151926778ee86e.jpg")
+            os.remove(f"https://te.legra.ph/file/793857c41d16da640af76.jpg")
         except:
             pass
-        background.save(f"https://te.legra.ph/file/b1e0213151926778ee86e.jpg")
-        return f"https://te.legra.ph/file/b1e0213151926778ee86e.jpg"
+        background.save(f"https://te.legra.ph/file/793857c41d16da640af76.jpg")
+        return f"https://te.legra.ph/file/793857c41d16da640af76.jpg"
     except Exception:
         return YOUTUBE_IMG_URL
