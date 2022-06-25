@@ -142,7 +142,7 @@ cplay_5 : "Only Channels are supported."
 cplay_6 : "You need to be the **Owner** of the channel[{0}] to connect it with this group.\n**Channel's Owner:** @{1}\n\nAlternatively you can link your group to that channel and then try connnecting with `/channelplay linked`"
 
 #Play
-play_1 : "Rukjao bahiyo aur unki bheno Processing Query... Please Wait !"
+play_1 : "🔍!"
 play_2 : "**🏷ᴄʜᴀɴɴᴇʟ ᴘʟᴀʏ**\n\n❣️ᴘʀᴏᴄᴇssɪɴɢ ... ᴛᴀᴋᴇ ᴘᴀᴛɪᴇɴᴄᴇ!\n**ʟɪɴᴋᴇᴅ ᴄʜᴀɴɴᴇʟ:** {0}"
 play_3 : "ғᴀɪʟᴇᴅ ᴛᴏ ᴘʀᴏᴄᴇss !"
 play_4 : "🖇 **ᴀᴅᴍɪɴ ᴏɴʟʏ ᴘʟᴀʏ**\nᴏɴʟʏ ᴀᴅᴍɪɴ ᴀɴᴅ ᴀᴜᴛʜ ᴜsᴇʀ ᴄᴀɴ ᴘʟᴀʏ ᴍᴜsɪᴄ ɪɴ ᴛʜɪs ɢᴄ.\n\nᴄʜᴀɴɢᴇ ᴛʜɪs ʙʏ /playmode ᴀɴᴅ ɪғ ᴜ ᴀʀᴇ ᴀᴅᴍɪɴ, ʀᴇʟᴏᴀᴅ ʙʏ  /admincache"
@@ -163,7 +163,7 @@ play_18 : "**ғɪʀsᴛ sᴛᴀʀᴛ ʏᴏᴜʀ ᴠᴄ**\n\nᴛᴏ ᴜsᴇ ᴅɪ
 
 
 #Playlist
-playlist_1 : "**Usage:** Give me somg name Bamby."
+playlist_1 : "😙Give me somg name Bamby."
 playlist_2 : "Ruk ja bhai Getting your playlist. Please wait"
 playlist_3 : "You have no playlist on Bot's Server."
 playlist_4 : "Fetched Playlist:\n\n"
@@ -209,8 +209,8 @@ ping_2 : "{0} is working good with as ping of `{1}` ms.\n\nBot's uptime is {2} a
 
 
 # Song
-song_1 : "You can download Music or Video from YouTube only in private chat. Please start me in private chat."
-song_2 : "**Usage:**\n\n/song [Music Name] or [Youtube Link]"
+song_1 : "Akele me aao bhaiya milajayega tumhe song."
+song_2 : "**Usage:**\n\n/song Give me somg name bamby"
 song_3 : "Live Link Detected. I am not able to download live youtube videos. "
 song_4 : "**🔗Title:**- {0}\n\nSelect the type in which you want to download."
 song_5 : "Not a valid Youtube Link"
@@ -276,9 +276,9 @@ P_B_3 : "🏮 Start Live Stream"
 P_B_4 : "🎵 Play Playlist"
 
 #Playlist
-PL_B_1 : "❤Play Playlist"
-PL_B_2 : " Playlists"
-PL_B_3 : "✚ Additional"
+PL_B_1 : "✨Channel"
+PL_B_2 : " Group🌹"
+PL_B_3 : "updates⚡"
 PL_B_4 : "📡 Play Mode"
 PL_B_5 : "🔄 Del Whole Playlist"
 PL_B_6 : "↗️ Delete Playlist"
@@ -318,7 +318,7 @@ ST_B_26 : "🗑 Command Clean"
 ST_B_27 : "🧑‍🚀 Suggestion Mode"
 
 #Song
-SG_B_1 : "AKELE ME AA BHAI MIL JAYEGA TUJE SONG"
+SG_B_1 : "PM"
 SG_B_2 : "🔊 Audio"
 SG_B_3 : "🎥 Video"
 
@@ -431,8 +431,8 @@ pbot_13 : "\n**<b>Unfetched Chats:</b>**\n\n"
 
 #Gbanned
 gban_1 : "Chumtiya he kya ho jo apne aap ko karna he ban!"
-gban_2 : "Should i block myself? Lol"
-gban_3 : "You want to block a sudo user?"
+gban_2 : "𝙱𝚑𝚔𝚔𝚔 𝚋𝚑𝚊𝚍𝚟𝚎 𝚊𝚙𝚗𝚎 𝚊𝚊𝚙 𝚔𝚘 𝚔𝚢𝚞 𝚋𝚊𝚗 𝚔𝚊𝚛𝚞"
+gban_3 : "𝙷𝚞𝚝 𝚌𝚑𝚞𝚖𝚝𝚒𝚢𝚎 𝚜𝚞𝚍𝚘 𝚞𝚜𝚎𝚛 𝚔𝚘 𝚔𝚢𝚞 𝚋𝚊𝚗 𝚔𝚊𝚛𝚞?"
 gban_4 : "{0} abe bhai ye to phele se he **gbanned** from the bot."
 gban_5 : "**ruk jao guys gbam horha he {0}**\n\nExpected Time : {1}."
 gban_6 : "**Hogaya ye chutiya gbam**\n\nBanned **{0}** from **{1}** chats."
