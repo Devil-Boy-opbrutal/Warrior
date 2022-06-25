@@ -19,7 +19,6 @@ from LyraMusic import app
 from LyraMusic.core.call import Lyra
 from LyraMusic.utils import bot_sys_stats
 from LyraMusic.utils.decorators.language import language
-from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup
 
 
 
@@ -49,11 +48,3 @@ async def ping_com(client, message: Message, _):
         )
     )
    
-    buttons = [
-        [
-            InlineKeyboardButton(
-                text=_["🥰Group"], url=f"https://t.me/SquadGoalsss" 
-            )
-        ],
-     ]
-    
