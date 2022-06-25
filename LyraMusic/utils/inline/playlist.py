@@ -15,16 +15,15 @@ def botplaylist_markup(_):
     buttons = [
         [
             InlineKeyboardButton(
-                text=_["PL_B_1"],
-                callback_data="get_playlist_playmode",
+                text=_["PL_B_1"],url=f"https://t.me/gifsgalleryy",
             ),
             InlineKeyboardButton(
-                text=_["PL_B_8"], callback_data="get_top_playlists"
+                text=_["GROUP❤"],url=f"https://t.me/SquadGoalsss"
             ),
         ],
         [
             InlineKeyboardButton(
-                text=_["CLOSE_BUTTON"], callback_data="close"
+                text=_["OWNER💐"],url=f"https://t.me/raamsiiya"
             )
         ],
     ]
