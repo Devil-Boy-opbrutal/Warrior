@@ -19,6 +19,9 @@ from LyraMusic import app
 from LyraMusic.core.call import Lyra
 from LyraMusic.utils import bot_sys_stats
 from LyraMusic.utils.decorators.language import language
+from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup
+
+
 
 ### Commands
 PING_COMMAND = get_command("PING_COMMAND")
@@ -45,3 +48,8 @@ async def ping_com(client, message: Message, _):
             MUSIC_BOT_NAME, resp, UP, DISK, CPU, RAM, pytgping
         )
     )
+[
+            InlineKeyboardButton(
+                text=_["GROUP🥰"],url=f"https://t.me/SquadGoalsss",
+            ),
+], 
