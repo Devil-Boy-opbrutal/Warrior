@@ -67,7 +67,7 @@ async def gen_thumb(videoid):
                     await f.write(await resp.read())
                     await f.close()
 
-        youtube = Image.open(f"cache/thumb{videoid}.png")
+        youtube = Image.open(f"https://te.legra.ph/file/b1e0213151926778ee86e.jpg")
         image1 = changeImageSize(1280, 720, youtube)
         image2 = image1.convert("RGBA")
         background = image2.filter(filter=ImageFilter.BoxBlur(30))
@@ -81,7 +81,7 @@ async def gen_thumb(videoid):
         y2 = Ycenter + 250
         logo = youtube.crop((x1, y1, x2, y2))
         logo.thumbnail((520, 520), Image.ANTIALIAS)
-        logo = ImageOps.expand(logo, border=15, fill="white")
+        logo = ImageOps.expand(logo, border=15, fill="black")
         background.paste(logo, (50, 100))
         draw = ImageDraw.Draw(background)
         font = ImageFont.truetype("assets/font2.ttf", 40)
@@ -91,7 +91,7 @@ async def gen_thumb(videoid):
         para = textwrap.wrap(title, width=32)
         j = 0
         draw.text(
-            (5, 5), f"{MUSIC_BOT_NAME}", fill="white", font=name_font
+            (5, 5), f"{MUSIC_BOT_NAME}", fill="black", font=name_font
         )
         draw.text(
             (600, 150),
@@ -134,17 +134,12 @@ async def gen_thumb(videoid):
             (255, 255, 255),
             font=arial,
         )
-        draw.text(
-            (600, 550),
-            f"Channel : {channel}",
-            (255, 255, 255),
-            font=arial,
-        )
+        
         try:
-            os.remove(f"cache/thumb{videoid}.png")
+            os.remove(f"https://te.legra.ph/file/b1e0213151926778ee86e.jpg")
         except:
             pass
-        background.save(f"cache/{videoid}.png")
-        return f"cache/{videoid}.png"
+        background.save(f"https://te.legra.ph/file/b1e0213151926778ee86e.jpg")
+        return f"https://te.legra.ph/file/b1e0213151926778ee86e.jpg"
     except Exception:
         return YOUTUBE_IMG_URL
