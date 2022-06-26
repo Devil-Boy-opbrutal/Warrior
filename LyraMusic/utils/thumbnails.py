@@ -126,12 +126,7 @@ async def gen_thumb(videoid):
             (255, 255, 255),
             font=arial,
         )
-        draw.text(
-            (600, 550),
-            f"Channel : {channel}",
-            (255, 255, 255),
-            font=arial,
-        )
+        
         try:
             os.remove(f"https://te.legra.ph/file/793857c41d16da640af76.jpg")
         except:
