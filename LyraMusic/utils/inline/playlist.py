@@ -20,7 +20,7 @@ def botplaylist_markup(_):
         ],
         [
             InlineKeyboardButton(
-                text=_["Group😍"], url=f"https://t.me/SquadGoalsss"
+                text=_["PL_B_2"],url=f"https://t.me/SquadGoalsss"
             ),
             InlineKeyboardButton(
                 text=_["CLOSE_BUTTON"], callback_data="close"
