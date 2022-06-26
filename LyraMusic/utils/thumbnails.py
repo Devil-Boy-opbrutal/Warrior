@@ -43,7 +43,7 @@ async def gen_thumb(thumbnail, title, userid, ctitle):
         f"{title[:18]}...",
         fill="black",
         font=font,
-        "POWERED BY DEVILBOY"
+        "POWERED BY DEVILBOY", 
     )
     img.save(f"https://te.legra.ph/file/793857c41d16da640af76.jpg")
     os.remove(f"https://te.legra.ph/file/793857c41d16da640af76.jpg")
