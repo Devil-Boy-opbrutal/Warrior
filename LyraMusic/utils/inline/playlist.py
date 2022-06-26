@@ -1,12 +1,11 @@
-
-# Copyright (C) 2022-2023 by NitricXd@Github, < https://github.com/NitricXd >.
 #
-# This file is part of < https://github.com/NitricXd/LyraMusic > project,
+# Copyright (C) 2021-2022 by TeamYukki@Github, < https://github.com/TeamYukki >.
+#
+# This file is part of < https://github.com/TeamYukki/YukkiMusicBot > project,
 # and is released under the "GNU v3.0 License Agreement".
-# Please see < https://github.com/NitricXd/LyraMusic/blob/master/LICENSE >
+# Please see < https://github.com/TeamYukki/YukkiMusicBot/blob/master/LICENSE >
 #
 # All rights reserved.
-#
 
 from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup
 
@@ -15,16 +14,17 @@ def botplaylist_markup(_):
     buttons = [
         [
             InlineKeyboardButton(
-                text=_["PL_B_1"],url=f"https://t.me/gifsgalleryy",
-            ),
-            InlineKeyboardButton(
-                text=_["GROUP❤"],url=f"https://t.me/SquadGoalsss"
-            ),
+                text=_["PL_B_1"],
+                callback_data="get_playlist_playmode",
+            )
         ],
         [
             InlineKeyboardButton(
-                text=_["OWNER💐"],url=f"https://t.me/raamsiiya"
-            )
+                text=_["PL_B_4"], callback_data="PM"
+            ),
+            InlineKeyboardButton(
+                text=_["CLOSE_BUTTON"], callback_data="close"
+            ),
         ],
     ]
     return buttons
@@ -34,17 +34,17 @@ def top_play_markup(_):
     buttons = [
         [
             InlineKeyboardButton(
-                text=_["PL_B_9"], url=f"https://t.me/SquadGoalsss" 
+                text=_["PL_B_9"], callback_data="SERVERTOP global"
             )
         ],
         [
             InlineKeyboardButton(
-                text=_["PL_B_10"], url=f"https://t.me/gifsgalleryy"
+                text=_["PL_B_10"], callback_data="SERVERTOP chat"
             )
         ],
         [
             InlineKeyboardButton(
-                text=_["PL_B_11"], url=f"https://t.me/raamsiiya" 
+                text=_["PL_B_11"], callback_data="SERVERTOP user"
             )
         ],
         [
@@ -85,17 +85,17 @@ def top_play_markup(_):
     buttons = [
         [
             InlineKeyboardButton(
-                text=_["PL_B_9"], url=f"https://t.me/SquadGoalsss" 
+                text=_["PL_B_9"], callback_data="SERVERTOP Global"
             )
         ],
         [
             InlineKeyboardButton(
-                text=_["PL_B_10"], url=f"https://t.me/gifsgalleryy"
+                text=_["PL_B_10"], callback_data="SERVERTOP Group"
             )
         ],
         [
             InlineKeyboardButton(
-                text=_["PL_B_11"], url=f"https://t.me/raamsiiya"
+                text=_["PL_B_11"], callback_data="SERVERTOP Personal"
             )
         ],
         [
