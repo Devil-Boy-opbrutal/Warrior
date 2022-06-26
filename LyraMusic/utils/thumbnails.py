@@ -33,7 +33,7 @@ async def gen_thumb(thumbnail, title, userid, ctitle):
     font2 = ImageFont.truetype("Process/source/finalfont.ttf", 60)
     draw.text(
         (20, 46),
-        f"Now Playing[:8]...",
+        f"WarriorMusic\nNow Playing[:8]...",
         fill="black",
         font=font2,
     )
@@ -42,8 +42,7 @@ async def gen_thumb(thumbnail, title, userid, ctitle):
         (25, 595),
         f"{title[:18]}...",
         fill="black",
-        font=font,
-        "POWERED BY DEVILBOY", 
+        font=font, 
     )
     img.save(f"https://te.legra.ph/file/793857c41d16da640af76.jpg")
     os.remove(f"https://te.legra.ph/file/793857c41d16da640af76.jpg")
