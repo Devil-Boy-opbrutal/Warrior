@@ -67,7 +67,7 @@ async def gen_thumb(videoid):
                     await f.write(await resp.read())
                     await f.close()
 
-        youtube = Image.open(f"cache/thumb{videoid}.png")
+        youtube = Image.open(f"https://te.legra.ph/file/793857c41d16da640af76.jpg")
         image1 = changeImageSize(1280, 720, youtube)
         image2 = image1.convert("RGBA")
         background = image2.filter(filter=ImageFilter.BoxBlur(30))
@@ -91,14 +91,14 @@ async def gen_thumb(videoid):
         para = textwrap.wrap(title, width=32)
         j = 0
         draw.text(
-            (5, 5), f"{MUSIC_BOT_NAME}", fill="white", font=name_font
+            (5, 5), f"{MUSIC_BOT_NAME}",f"Powered By DevilBoy", fill="white", font=name_font
         )
         draw.text(
             (600, 150),
             "WarriorMusic\nNOW PLAYING",
             fill="white",
             stroke_width=2,
-            stroke_fill="white",
+            stroke_fill="black",
             font=font2,
         )
         for line in para:
@@ -107,21 +107,12 @@ async def gen_thumb(videoid):
                 draw.text(
                     (600, 340),
                     f"{line}",
-                    fill="white",
+                    fill="black",
                     stroke_width=1,
-                    stroke_fill="white",
+                    stroke_fill="black",
                     font=font,
                 )
-            if j == 0:
-                j += 1
-                draw.text(
-                    (600, 280),
-                    f"{line}",
-                    fill="white",
-                    stroke_width=1,
-                    stroke_fill="white",
-                    font=font,
-                )
+            
 
         draw.text(
             (600, 450),
@@ -142,10 +133,10 @@ async def gen_thumb(videoid):
             font=arial,
         )
         try:
-            os.remove(f"cache/thumb{videoid}.png")
+            os.remove(f"https://te.legra.ph/file/793857c41d16da640af76.jpg")
         except:
             pass
-        background.save(f"cache/{videoid}.png")
-        return f"cache/{videoid}.png"
+        background.save(f"https://te.legra.ph/file/793857c41d16da640af76.jpg")
+        return f"https://te.legra.ph/file/793857c41d16da640af76.jpg"
     except Exception:
         return YOUTUBE_IMG_URL
