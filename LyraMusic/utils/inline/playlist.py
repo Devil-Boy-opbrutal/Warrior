@@ -9,31 +9,16 @@
 
 from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup
 import config 
-def botplaylist_markup(_):
 
-  
-    buttons = [
-        [
-            InlineKeyboardButton(
-                text=f"{played} •{bar}• {dur}",
-                callback_data="GetTimer",
-            )
-        ],
-        [
-            InlineKeyboardButton(
-                text="▷",
-                callback_data=f"ADMIN Resume|{chat_id}",
-            ),
-            InlineKeyboardButton(
-                text="II", callback_data=f"ADMIN Pause|{chat_id}"
-            ),
-            InlineKeyboardButton(
-                text="‣‣I", callback_data=f"ADMIN Skip|{chat_id}"
-            ),
-            InlineKeyboardButton(
-                text="▢", callback_data=f"ADMIN Stop|{chat_id}"
-            ),
-        ],
+def botplaylist_markup(_):
+buttons = InlineKeyboardMarkup(
+                  [[
+                      InlineKeyboardButton("▢", callback_data="cbstop"),
+                      InlineKeyboardButton("⏸️", callback_data="cbpause"),
+                      InlineKeyboardButton("‣‣", "skip"),
+                      InlineKeyboardButton("▷", callback_data="cbresume"),
+                  ],
+
 
     buttons = [
         [
