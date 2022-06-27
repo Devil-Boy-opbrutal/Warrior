@@ -10,7 +10,7 @@
 from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup
 
 def botplaylist_markup(_):
-    buttons = InlineKeyboardMarkup(
+   buttons = InlineKeyboardMarkup(
                   [[
                       InlineKeyboardButton("▢", callback_data="stop_music"),
                       InlineKeyboardButton("⏸️", callback_data="pause_admin"),
