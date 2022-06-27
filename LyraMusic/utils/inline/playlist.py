@@ -8,21 +8,32 @@
 # All rights reserved.
 
 from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup
-from LyraMusic.plugins.admins import (SKIP_COMMAND,
-                                      RESUME_COMMAND,
-                                      STOP_COMMAND,
-                                      PAUSE_COMMAND) 
+import config 
 def botplaylist_markup(_):
 
-    buttons = InlineKeyboardMarkup(
-                  [[
-                      InlineKeyboardButton("▷", callback_data="STOP_COMMAND"),
-                      InlineKeyboardButton("▢", callback_data="RESUME_COMMAND"),
-                      InlineKeyboardButton("‣‣", "SKIP_COMMAND"),
-                      InlineKeyboardButton("▷", callback_data="PAUSE_COMMAND"),
-                  ],
-                  ]
-              ) 
+  
+    buttons = [
+        [
+            InlineKeyboardButton(
+                text=f"{played} •{bar}• {dur}",
+                callback_data="GetTimer",
+            )
+        ],
+        [
+            InlineKeyboardButton(
+                text="▷",
+                callback_data=f"ADMIN Resume|{chat_id}",
+            ),
+            InlineKeyboardButton(
+                text="II", callback_data=f"ADMIN Pause|{chat_id}"
+            ),
+            InlineKeyboardButton(
+                text="‣‣I", callback_data=f"ADMIN Skip|{chat_id}"
+            ),
+            InlineKeyboardButton(
+                text="▢", callback_data=f"ADMIN Stop|{chat_id}"
+            ),
+        ],
 
     buttons = [
         [
