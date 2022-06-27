@@ -11,7 +11,7 @@ from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup
 from LyraMusic.plugins.admins import (SKIP_COMMAND,
                                       RESUME_COMMAND,
                                       STOP_COMMAND,
-                                      PAUSE_COMMAND,) 
+                                      PAUSE_COMMAND) 
 def botplaylist_markup(_):
 
     buttons = InlineKeyboardMarkup(
