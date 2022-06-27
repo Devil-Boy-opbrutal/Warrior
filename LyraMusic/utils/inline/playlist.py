@@ -21,6 +21,9 @@ def botplaylist_markup(_):
                       InlineKeyboardButton("⏭️", "SKIP_COMMAND"),
                       InlineKeyboardButton("▶️", callback_data="PAUSE_COMMAND"),
                   ],
+                  ]
+              ) 
+
     buttons = [
         [
             InlineKeyboardButton(
