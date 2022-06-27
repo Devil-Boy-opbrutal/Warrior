@@ -16,10 +16,10 @@ def botplaylist_markup(_):
 
     buttons = InlineKeyboardMarkup(
                   [[
-                      InlineKeyboardButton("⏹", callback_data="STOP_COMMAND"),
-                      InlineKeyboardButton("⏸", callback_data="RESUME_COMMAND"),
-                      InlineKeyboardButton("⏭️", "SKIP_COMMAND"),
-                      InlineKeyboardButton("▶️", callback_data="PAUSE_COMMAND"),
+                      InlineKeyboardButton("▷", callback_data="STOP_COMMAND"),
+                      InlineKeyboardButton("▢", callback_data="RESUME_COMMAND"),
+                      InlineKeyboardButton("‣‣", "SKIP_COMMAND"),
+                      InlineKeyboardButton("▷", callback_data="PAUSE_COMMAND"),
                   ],
                   ]
               ) 
