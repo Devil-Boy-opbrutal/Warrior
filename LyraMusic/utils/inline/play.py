@@ -36,6 +36,13 @@ def track_markup(_, videoid, user_id, channel, fplay):
 def stream_markup(_, videoid):
     buttons = [
         [
+            InlineKeyboardButton("▢", callback_data="stop_music"),
+            InlineKeyboardButton("⏸️", callback_data="pause_admin"),
+            InlineKeyboardButton("‣‣", "skip"),
+            InlineKeyboardButton("▷", callback_data="resume_com"),
+        ], 
+              
+        [
             InlineKeyboardButton(
                 text=_["PL_B_2"],url=f"https://t.me/SquadGoalsss",
             ),
