@@ -1,3 +1,4 @@
+
 #
 # Copyright (C) 2022-2023 by NitricXd@Github, < https://github.com/NitricXd >.
 #
@@ -62,12 +63,12 @@ async def gen_thumb(videoid):
             async with session.get(thumbnail) as resp:
                 if resp.status == 200:
                     f = await aiofiles.open(
-                        f"https://te.legra.ph/file/793857c41d16da640af76.jpg", mode="wb"
+                        f"cache/thumb{videoid}.png", mode="wb"
                     )
                     await f.write(await resp.read())
                     await f.close()
 
-        youtube = Image.open(f"https://te.legra.ph/file/793857c41d16da640af76.jpg")
+        youtube = Image.open(f"cache/thumb{videoid}.png")
         image1 = changeImageSize(1280, 720, youtube)
         image2 = image1.convert("RGBA")
         background = image2.filter(filter=ImageFilter.BoxBlur(30))
@@ -91,12 +92,12 @@ async def gen_thumb(videoid):
         para = textwrap.wrap(title, width=32)
         j = 0
         draw.text(
-            (5, 5), f"{MUSIC_BOT_NAME}",f"Powered By DevilBoy", fill="white", font=name_font
+            (5, 5), f"POWERED BY DEVILBOY", fill="black", font=name_font
         )
         draw.text(
             (600, 150),
-            "WarriorMusic\nNOW PLAYING",
-            fill="white",
+            "Warrior Music\nNOW PLAYING",
+            fill="black",
             stroke_width=2,
             stroke_fill="black",
             font=font2,
@@ -112,7 +113,6 @@ async def gen_thumb(videoid):
                     stroke_fill="black",
                     font=font,
                 )
-            
 
         draw.text(
             (600, 450),
@@ -125,13 +125,12 @@ async def gen_thumb(videoid):
             f"Duration : {duration[:23]} Mins",
             (255, 255, 255),
             font=arial,
-        )
-        
+        )  
         try:
-            os.remove(f"https://te.legra.ph/file/793857c41d16da640af76.jpg")
+            os.remove(f"cache/thumb{videoid}.png")
         except:
             pass
-        background.save(f"https://te.legra.ph/file/793857c41d16da640af76.jpg")
-        return f"https://te.legra.ph/file/793857c41d16da640af76.jpg"
+        background.save(f"cache/{videoid}.png")
+        return f"cache/{videoid}.png"
     except Exception:
         return YOUTUBE_IMG_URL
