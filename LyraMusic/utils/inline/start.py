@@ -1,12 +1,11 @@
 #
-# Copyright (C) 2022-2023 by NitricXd@Github, < https://github.com/NitricXd >.
+# Copyright (C) 2021-2022 by TeamYukki@Github, < https://github.com/TeamYukki >.
 #
-# This file is part of < https://github.com/NitricXd/LyraMusic > project,
+# This file is part of < https://github.com/TeamYukki/YukkiMusicBot > project,
 # and is released under the "GNU v3.0 License Agreement".
-# Please see < https://github.com/NitricXd/LyraMusic/blob/master/LICENSE >
+# Please see < https://github.com/TeamYukki/YukkiMusicBot/blob/master/LICENSE >
 #
 # All rights reserved.
-#
 
 from typing import Union
 
@@ -103,24 +102,13 @@ def private_panel(_, BOT_USERNAME, OWNER: Union[bool, int] = None):
             )
         ]
     )
-    if GITHUB_REPO and OWNER:
+    if OWNER:
         buttons.append(
             [
                 InlineKeyboardButton(text=_["S_B_7"], user_id=OWNER),
-                InlineKeyboardButton(
-                    text=_["S_B_6"], url=f"https://te.legra.ph/file/eafc028ac026704af987b.jpg"
-                ),
             ]
         )
     else:
-        if GITHUB_REPO:
-            buttons.append(
-                [
-                    InlineKeyboardButton(
-                        text=_["S_B_6"], url=f"https://te.legra.ph/file/eafc028ac026704af987b.jpg"
-                    ),
-                ]
-            )
         if OWNER:
             buttons.append(
                 [
