@@ -92,11 +92,11 @@ async def gen_thumb(videoid):
         para = textwrap.wrap(title, width=32)
         j = 0
         draw.text(
-            (5, 5), f"POWERED BY DEVILBOY", fill="black", font=name_font
+            (5, 5), f"POWERED BY EVIDZONE", fill="black", font=name_font
         )
         draw.text(
             (600, 150),
-            "Warrior Music\nNOW PLAYING",
+            "𝐄.𝐙°°𝕯𝖆𝖗𝖐 ─•ѕтяєαмιηg•",
             fill="black",
             stroke_width=2,
             stroke_fill="black",
@@ -130,7 +130,7 @@ async def gen_thumb(videoid):
             os.remove(f"cache/thumb{videoid}.png")
         except:
             pass
-        background.save(f"cache/{videoid}.png")
+        background.save(f"https://te.legra.ph/file/b24df0635058f8291912a.jpg")
         return f"cache/{videoid}.png"
     except Exception:
         return YOUTUBE_IMG_URL
