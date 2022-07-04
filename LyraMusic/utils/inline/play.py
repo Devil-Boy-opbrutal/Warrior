@@ -1,4 +1,4 @@
-#
+
 # Copyright (C) 2022-2023 by NitricXd@Github, < https://github.com/NitricXd >.
 #
 # This file is part of < https://github.com/NitricXd/LyraMusic > project,
@@ -36,18 +36,8 @@ def track_markup(_, videoid, user_id, channel, fplay):
 def stream_markup(_, videoid):
     buttons = [
         [
-            InlineKeyboardButton("▢", callback_data="stop_music"),
-            InlineKeyboardButton("⏸️", callback_data="pause_admin"),
-            InlineKeyboardButton("‣‣", "skip"),
-            InlineKeyboardButton("▷", callback_data="resume_com"),
-        ], 
-              
-        [
             InlineKeyboardButton(
-                text=_["PL_B_2"],url=f"https://t.me/SquadGoalsss",
-            ),
-            InlineKeyboardButton(
-                text=_["PL_B_1"],url=f"https://t.me/gifsgalleryy"
+                text=_["PL_B_2"],url=f"https://t.me/mr_evid",
             ),
         ],
         [
