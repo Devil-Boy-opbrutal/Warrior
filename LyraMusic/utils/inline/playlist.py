@@ -13,14 +13,11 @@ def botplaylist_markup(_):
    
     buttons = [
         [
-            InlineKeyboardButton(
-                text=_["PL_B_1"],
-                url=f"https://t.me/gifsgalleryy",
-            )
+            
         ],
         [
             InlineKeyboardButton(
-                text=_["PL_B_2"],url=f"https://t.me/SquadGoalsss"
+                text=_["PL_B_2"],url=f"https://t.me/mr_evid"
             ), 
             
             InlineKeyboardButton(
