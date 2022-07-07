@@ -35,7 +35,13 @@ def track_markup(_, videoid, user_id, channel, fplay):
 
 def stream_markup(_, videoid):
     buttons = [
-        [
+        [  
+             InlineKeyboardButton("⏹", callback_data="cbstop"),
+             InlineKeyboardButton("⏸", callback_data="cbpause"),
+             InlineKeyboardButton("⏭️", "skip"),
+             InlineKeyboardButton("▶️", callback_data="cbresume"),
+        ], 
+        [ 
             InlineKeyboardButton(
                 text=_["PL_B_2"],url=f"https://t.me/mr_evid",
             ),
