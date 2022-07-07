@@ -1,13 +1,11 @@
-
 #
-# Copyright (C) 2022-2023 by NitricXd@Github, < https://github.com/NitricXd >.
+# Copyright (C) 2021-2022 by TeamYukki@Github, < https://github.com/TeamYukki >.
 #
-# This file is part of < https://github.com/NitricXd/LyraMusic > project,
+# This file is part of < https://github.com/TeamYukki/YukkiMusicBot > project,
 # and is released under the "GNU v3.0 License Agreement".
-# Please see < https://github.com/NitricXd/LyraMusic/blob/master/LICENSE >
+# Please see < https://github.com/TeamYukki/YukkiMusicBot/blob/master/LICENSE >
 #
 # All rights reserved.
-#
 
 import os
 import re
@@ -92,11 +90,11 @@ async def gen_thumb(videoid):
         para = textwrap.wrap(title, width=32)
         j = 0
         draw.text(
-            (5, 5), f"POWERED BY EVIDZONE", fill="black", font=name_font
+            (5, 5), f"POWERED BY EVID", fill="black", font=name_font
         )
         draw.text(
             (600, 150),
-            "𝐄.𝐙°°𝕯𝖆𝖗𝖐 ─•ѕтяєαмιηg•",
+            "EVID STREAM",
             fill="black",
             stroke_width=2,
             stroke_fill="black",
@@ -113,6 +111,7 @@ async def gen_thumb(videoid):
                     stroke_fill="black",
                     font=font,
                 )
+            
 
         draw.text(
             (600, 450),
@@ -125,12 +124,18 @@ async def gen_thumb(videoid):
             f"Duration : {duration[:23]} Mins",
             (255, 255, 255),
             font=arial,
-        )  
+        )
+        draw.text(
+            (600, 550),
+            f"Channel : {channel}",
+            (255, 255, 255),
+            font=arial,
+        )
         try:
             os.remove(f"cache/thumb{videoid}.png")
         except:
             pass
-        background.save(f"https://te.legra.ph/file/b24df0635058f8291912a.jpg")
+        background.save(f"cache/{videoid}.png")
         return f"cache/{videoid}.png"
     except Exception:
         return YOUTUBE_IMG_URL
