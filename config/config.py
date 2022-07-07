@@ -316,7 +316,7 @@ if TELEGRAM_AUDIO_URL:
 
 
 if STREAM_IMG_URL:
-    if STREAM_IMG_URL != "assets/Stream.jpeg":
+    if STREAM_IMG_URL != "https://te.legra.ph/file/3d6a19b317541b36a8937.jpg":
         if not re.match("(?:http|https)://", STREAM_IMG_URL):
             print(
                 "[ERROR] - Your STREAM_IMG_URL url is wrong. Please ensure that it starts with https://"
@@ -325,7 +325,7 @@ if STREAM_IMG_URL:
 
 
 if SOUNCLOUD_IMG_URL:
-    if SOUNCLOUD_IMG_URL != "https://te.legra.ph/file/b1e0213151926778ee86e.jpg":
+    if SOUNCLOUD_IMG_URL != "https://te.legra.ph/file/023c6d3c058341e89a703.jpg":
         if not re.match("(?:http|https)://", SOUNCLOUD_IMG_URL):
             print(
                 "[ERROR] - Your SOUNCLOUD_IMG_URL url is wrong. Please ensure that it starts with https://"
