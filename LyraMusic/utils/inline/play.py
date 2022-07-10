@@ -36,10 +36,10 @@ def track_markup(_, videoid, user_id, channel, fplay):
 def stream_markup(_, videoid):
     buttons = [
         [  
-             InlineKeyboardButton("⏹", callback_data="cbstop"),
-             InlineKeyboardButton("⏸", callback_data="cbpause"),
+             InlineKeyboardButton("⏹", callback_data="stop_music"),
+             InlineKeyboardButton("⏸", callback_data="pause_admin"),
              InlineKeyboardButton("⏭️", "skip"),
-             InlineKeyboardButton("▶️", callback_data="cbresume"),
+             InlineKeyboardButton("▶️", callback_data="resume_com"),
         ], 
         [ 
             InlineKeyboardButton(
