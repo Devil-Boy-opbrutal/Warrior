@@ -216,7 +216,8 @@ lyrics_4 : "Click on the button below and get searched lyrics to avoid long spam
 
 #Ping
 ping_1 : "Pong!!!!"
-ping_2 : "{0}  with as ping of `{1}`\n𝙾𝚆𝙽𝙴𝚁\n\n\n\t[Evid](https://t.me/mr_evid)" 
+ping_2 : "{0}  with as ping of `{1}`\tt🌟＿＿𝓞𝓦𝓝𝓔𝓡＿＿
+\n\n\n\tt[𝙳𝙴𝚅𝙸𝙻✨𝙱𝙾𝚈](https://t.me/tag_dekhlunga_badme) " 
 
 
 # Song
@@ -288,7 +289,7 @@ P_B_4 : "🎵 Play Playlist"
 
 #Playlist
 PL_B_1 : "✨Channel"
-PL_B_2 : "𝙴𝚅𝙸𝙳😈"
+PL_B_2 : "GROUP⚡"
 PL_B_3 : "✚ Additional"
 PL_B_4 : "📡 Play Mode"
 PL_B_5 : "🔄 Del Whole Playlist"
