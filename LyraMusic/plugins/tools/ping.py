@@ -48,10 +48,11 @@ async def ping_com(client, message: Message, _):
         )
     )
 def info(_) :
-     buttons=[
+    buttons=[
 
    [ 
             InlineKeyboardButton(
                 text=_["PL_B_2"],url=f"https://t.me/SquadGoalsss",
              ),
    ]
+], 
