@@ -90,27 +90,17 @@ async def gen_thumb(videoid):
         para = textwrap.wrap(title, width=32)
         j = 0
         draw.text(
-            (5, 5), f"POWERED BY EVID", fill="black", font=name_font
+            (5, 5), f"WARRIOR MUSIC", fill="orange", font=name_font
         )
         draw.text(
             (600, 150),
-            "EVID STREAM",
+            "WARRIOR STREAM",
             fill="black",
             stroke_width=2,
-            stroke_fill="black",
+            stroke_fill="green",
             font=font2,
         )
-        for line in para:
-            if j == 1:
-                j += 1
-                draw.text(
-                    (600, 340),
-                    f"{line}",
-                    fill="black",
-                    stroke_width=1,
-                    stroke_fill="black",
-                    font=font,
-                )
+        
             
 
         draw.text(
@@ -127,7 +117,7 @@ async def gen_thumb(videoid):
         )
         draw.text(
             (600, 550),
-            f"Channel : {channel}",
+            f"POWER BY DEVILBOY",
             (255, 255, 255),
             font=arial,
         )
