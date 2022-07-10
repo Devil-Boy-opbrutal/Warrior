@@ -17,11 +17,11 @@ def botplaylist_markup(_):
         ],
         [
             InlineKeyboardButton(
-                text=_["PL_B_2"],url=f"https://t.me/mr_evid"
+                text=_["PL_B_1"],url=f"https://t.me/SquadGoalsss"
             ), 
             
             InlineKeyboardButton(
-                text=_["CLOSE_BUTTON"], callback_data="close"
+                text=_["PL_B_2"],url=f"https://t.me/gifsgalleryy
             ),
         ],
     ]
