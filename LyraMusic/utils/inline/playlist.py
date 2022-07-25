@@ -21,7 +21,7 @@ def botplaylist_markup(_):
             ), 
             
             InlineKeyboardButton(
-                text=_["PL_B_2"],url=f"https://t.me/gifsgalleryy
+                text=_["PL_B_2"],url=f"https://t.me/gifsgalleryy"
             ),
         ],
     ]
