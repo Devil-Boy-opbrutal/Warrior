@@ -176,22 +176,22 @@ PING_IMG_URL = getenv(
 
 PLAYLIST_IMG_URL = getenv(
     "PLAYLIST_IMG_URL",
-    "https://te.legra.ph/file/b54308ffc1e50459756b0.jpg",
+    "https://te.legra.ph/file/eafc028ac026704af987b.jpg",
 )
 
 GLOBAL_IMG_URL = getenv(
     "GLOBAL_IMG_URL",
-    "https://te.legra.ph/file/d682d733f49893d78e4a3.jpg",
+    "https://te.legra.ph/file/eafc028ac026704af987b.jpg",
 )
 
 STATS_IMG_URL = getenv(
     "STATS_IMG_URL",
-    "https://te.legra.ph/file/d682d733f49893d78e4a3.jpg",
+    "https://te.legra.ph/file/9194ed1e74499a93c88b1.jpg",
 )
 
 TELEGRAM_AUDIO_URL = getenv(
     "TELEGRAM_AUDIO_URL",
-    "https://te.legra.ph/file/eafc028ac026704af987b.jpg",
+    "https://te.legra.ph/file/c15c5e9a863a877b4e223.jpg",
 )
 
 TELEGRAM_VIDEO_URL = getenv(
@@ -201,7 +201,7 @@ TELEGRAM_VIDEO_URL = getenv(
 
 STREAM_IMG_URL = getenv(
     "STREAM_IMG_URL",
-    "https://te.legra.ph/file/b24df0635058f8291912a.jpg",
+    "https://te.legra.ph/file/eafc028ac026704af987b.jpg",
 )
 
 SOUNCLOUD_IMG_URL = getenv(
