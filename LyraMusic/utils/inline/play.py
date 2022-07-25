@@ -46,7 +46,8 @@ def stream_markup(_, videoid):
                 text=_["PL_B_2"],url=f"https://t.me/SquadGoalsss",
              ),
             InlineKeyboardButton(
-                text=_["PL_B_1"],url=f"https://t.me/gifsgalleryy
+                text=_["PL_B_1"],url=f"https://t.me/gifsgalleryy", 
+             ), 
         ],
         [
             InlineKeyboardButton(
