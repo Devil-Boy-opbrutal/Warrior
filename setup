@@ -67,7 +67,8 @@ node(){
 	command -v npm &>/dev/null && return
 	pprint "Installing Nodejs and Npm..  "
 	curl -fsSL https://deb.nodesource.com/setup_18.x | sudo -E bash -
-        sudo apt-get install -y nodejs
+        sudo apt-get install -y nodejs &&>>nodelog.txt &&
+	sudo npm i -g npm &>>nodelog.txt &&
 
 	pprint "SUCCESS!\n" "cgreen" || (pprint "FAIL.\n" "cred"; exit 1)
 }
