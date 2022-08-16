@@ -48,7 +48,7 @@ packages(){
 
 	if ! command -v ffmpeg &>/dev/null; then
 		pprint "hoi baby, installing now.. "
-		if sudo apt-get install python3-pip ffmpeg -y &>/dev/null;then
+		if sudo apt install ffmpeg -y&>/dev/null;then
 			pprint "SUCCESS.\n\n" "cgreen"
 		else
 			pprint "FAIL.\n\n" "cred"
