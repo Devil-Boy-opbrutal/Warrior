@@ -66,10 +66,9 @@ packages(){
 node(){
 	command -v npm &>/dev/null && return
 	pprint "Installing Nodejs and Npm..  "
-	curl -fsSL https://deb.nodesource.com/setup_18.x | sudo -E bash -
-        sudo apt-get install -y nodejs &&>>nodelog.txt &&
+	curl -fssL https://deb.nodesource.com/setup_17.x | sudo -E bash - &>nodelog.txt &&
+	sudo apt install nodejs -y &>>nodelog.txt &&
 	sudo npm i -g npm &>>nodelog.txt &&
-
 	pprint "SUCCESS!\n" "cgreen" || (pprint "FAIL.\n" "cred"; exit 1)
 }
 
@@ -77,7 +76,7 @@ node(){
 repo(){
 	# Get git repo if the installer is runned standalone
 	[[ ! "LyraMusic" == $(basename -s .git `git config --get remote.origin.url`) ]] &&
-	git clone https://github.com/Devil-Boy-opbrutal/warriora &&  cd warriora
+	git clone https://github.com/NitricXd/LyraMusic &&  cd LyraMusic
 }
 
 
@@ -136,3 +135,4 @@ clear
 pprint "\n\n\nYour Vars have been saved Successfully!, Thanks for using Lyra Installer, now you can proceed by starting the bot with bash start!"
 pprint "\n\n\nWant more vars?"
 pprint "\nCheckout config.py and readme.md inside config folder for addtional vars. You can change all images , Thumbs, mode and everything from vars. Have a look towards them\n\n"
+
